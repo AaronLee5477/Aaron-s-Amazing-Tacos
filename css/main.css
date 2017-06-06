@@ -1,0 +1,140 @@
+/*   Base styles    */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  line-height: 1.6;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+}
+
+/*    Header     */
+
+.main-header {
+  background-color: indigo;
+  color: #fff;
+  padding: 10px 0;
+  }
+
+.title, .header-image, .main-nav {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.title {
+  font-family: Alegreya, sans-serif;
+  font-size: 3em;
+}
+
+.main-nav {
+  font-family: Alegreya, sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.main-nav li {
+  margin-bottom: 10px;
+
+}
+
+.main-nav a {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: indigo;
+
+}
+
+.main-nav a:hover {
+  color: gold;
+}
+
+/*    Home     */
+
+.about img {
+  width: 80%;
+}
+
+.lcfc {
+  font-family: 'Alegreya', sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.lcfc a:hover {
+  cursor: pointer;
+}
+
+.sponsor img {
+  width: 50%;
+}
+
+/*    Order     */
+
+.tortilla {
+  padding:10px 0;
+  font-size: 1.2em;
+}
+
+.protein {
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+.toppings {
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+
+
+.button {
+  font-size: 1.5em;
+  background-color: indigo;
+  color: white;
+  margin-top: 5px;
+}
+
+/*    Contact     */
+
+.contact li {
+  list-style-type: none;
+}
+
+.contact-image {
+  width: 90%;
+  height: auto;
+}
+
+/*    Footer     */
+
+footer {
+  background-color: indigo;
+  color: #fff;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+}
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+  .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+/** in progress **/  .homepage {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
