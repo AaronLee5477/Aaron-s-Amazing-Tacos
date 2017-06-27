@@ -14,7 +14,7 @@
 /*    Header     */
 
 .main-header {
-  background-color: indigo;
+  background: linear-gradient(indigo, purple);
   color: #fff;
   padding: 10px 0;
   }
@@ -54,7 +54,11 @@
   color: gold;
 }
 
-/*    Home     */
+img {
+  padding: 1.5em;
+}
+
+/*    Home/About Page   */
 
 .about img {
   width: 80%;
@@ -77,28 +81,24 @@
 
 /*    Order     */
 
-.tortilla {
-  padding:10px 0;
-  font-size: 1.2em;
+#taco_table {
+  margin: auto;
 }
 
-.protein {
-  padding: 10px 0;
-  font-size: 1.2em;
+th, td {
+  text-align: left;
 }
 
-.toppings {
-  padding: 10px 0;
-  font-size: 1.2em;
+td {
+  margin-left: 10px;
 }
-
 
 
 .button {
   font-size: 1.5em;
   background-color: indigo;
   color: white;
-  margin-top: 5px;
+  margin: 15px 0;
 }
 
 /*    Contact     */
@@ -108,6 +108,12 @@
 }
 
 .contact-image {
+  width: 90%;
+  height: auto;
+}
+
+.map {
+  margin: auto;
   width: 90%;
   height: auto;
 }
@@ -132,9 +138,21 @@ footer {
     margin: 0 auto;
   }
 
-/** in progress **/  .homepage {
+  .main-header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
   }
+
+  .main-nav {
+    margin: auto;
+  }
+
+  .pages {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+
 
 }
