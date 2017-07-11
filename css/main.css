@@ -101,6 +101,45 @@ td {
   margin: 15px 0;
 }
 
+/*  Cart modal */
+
+.modal {
+  display: none;
+  height: 250px;
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: auto;
+  border: 3px solid #000;
+  background-color: rgb(0,0,0);
+  background-color: rgba(255, 255,255,1);
+}
+
+.modal-content {
+  background color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /*    Contact     */
 
 .contact li {

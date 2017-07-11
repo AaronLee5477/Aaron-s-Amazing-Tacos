@@ -3,7 +3,10 @@
 3. Print cart and total when Go to Cart is clicked.
 
 
-
+// reset form
+//$('#taco_order').each(function() {
+  //  this.reset();
+//  });
 
 
 
