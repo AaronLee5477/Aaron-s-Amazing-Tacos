@@ -40,19 +40,48 @@ $(function () {
   var modal = document.getElementById('cart_modal');
   var cart_button = document.getElementById('go_to_cart')
   var span = document.getElementsByClassName('close')[0];
+  var cart_HTML = ""
+  var single_cost = 0
+  var total_cost = 0
 
   cart_button.onclick = function() {
     modal.style.display = 'block';
+    $(".modal_content").append("<h3>Your Cart</h3>");
+
+    // Displaying individual orders on the modal
+    if (taco_cart.length > 0) {
+      for (i = 0; i < taco_cart.length; ++i) {
+        cart_HTML +="<li><span class=modal_order>";
+        cart_HTML +=taco_cart[i].type + " ";
+        cart_HTML +=taco_cart[i].protein + " on ";
+        cart_HTML +=taco_cart[i].tortilla + "</span>";
+        single_cost = taco_cart[i].quantity * 3;
+        cart_HTML +="<span class=modal_cost>";
+        cart_HTML +=single_cost.toFixed(2);
+        cart_HTML +="</span>";
+      }
+
+      // Displaying cart total in the modal
+      total_cost = total_tacos * 3;
+      cart_HTML +="<li><span class=modal_order>Total</span><span=modal_cost>";
+      cart_HTML +=total_cost.toFixed(2) + "</span>"
+      $(".modal_content").append(cart_HTML);
+
+
+    } else {
+      $(".modal_content").append("<p>Your cart is empty!! Order some tacos!! <p>");
+    }
   }
 
   span.onclick = function () {
     modal.style.display = "none";
+    $(".modal_content").empty();
   }
 
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
+  // window.onclick = function(event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  // }
 
 });
