@@ -18,6 +18,7 @@
   background: linear-gradient(indigo, purple);
   color: #fff;
   padding: 10px 0;
+  display: block;
   }
 
 .title, .header-image, .main-nav {
@@ -40,7 +41,6 @@
 .main-nav li {
   margin-bottom: 10px;
   list-style: none;
-
 }
 
 .main-nav a {
@@ -82,19 +82,6 @@ img {
 }
 
 /*    Order     */
-
-#taco_table {
-  margin: auto;
-}
-
-th, td {
-  text-align: left;
-}
-
-td {
-  margin-left: 10px;
-}
-
 
 .button {
   font-size: 1.5em;
@@ -142,6 +129,27 @@ td {
   cursor: pointer;
 }
 
+.modal_content h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.modal_content li {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  margin-bottom: .75em;
+}
+
+.modal_cost {
+  margin-left: auto;
+}
+
+.modal_order {
+  margin-right: auto;
+}
+
+
 /*    Contact     */
 
 .contact li {
@@ -177,8 +185,8 @@ footer {
     width: 70%;
     max-width: 1000px;
     margin: auto;
-    padding-left: 0.5em
-    padding-right: 0.5em
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 
   .header-image {
@@ -207,11 +215,11 @@ footer {
 
   .homepage {
     display: flex;
-    width: 100%
+    width: 100%;
   }
 
   .column {
-    display: ;
+    display: inline-block;
     width: 50%;
     vertical-align: top;
     padding-left: 1em;
@@ -219,12 +227,10 @@ footer {
   }
 
   .about {
-    flex-direction: left;
     margin-right: 50px;
   }
 
   .sponsor {
-    flex-direction: right;
     margin-left: 50px;
   }
 }

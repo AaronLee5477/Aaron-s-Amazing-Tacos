@@ -5,8 +5,6 @@ var tortilla = "";
 var single_order_quantity = 0;
 var total_tacos = 0;
 
-
-
 $(function () {
 
 // Add single order to cart
@@ -68,6 +66,9 @@ $(function () {
       $(".modal_content").append(cart_HTML);
       $(".modal_content").append("<button type='submit' id='checkout' class='button'>Checkout</button>")
 
+      $('#checkout').click(function() {
+        alert("Checkout feature is under construction");
+      });
     } else {
       $(".modal_content").append("<p>Your cart is empty!! Order some tacos!! <p>");
     }
@@ -77,10 +78,5 @@ $(function () {
     modal.style.display = "none";
     $(".modal_content").empty();
   }
-
-  $('#checkout').click(function() {
-    alert("Checkout feature is under construction");
-  });
-
 
 });
