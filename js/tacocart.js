@@ -17,7 +17,7 @@ $(function () {
 
     //Alert for catching null values
     if (single_Order.type == "" || single_Order.protein == "" || single_Order.tortilla == "") {
-      alert("Please pick each option")
+      alert("Please pick each option");
     } else {
       taco_cart.push(single_Order);
       console.log(taco_cart);
@@ -28,7 +28,7 @@ $(function () {
         $("#protein").val("");
         $("#tortilla").val("");
         $("#single_order_quantity").val("1");
-      };
+      }
       // Add taco total in Cart button
       $('#go_to_cart').text('Go to Cart [' + total_tacos +' taco(s)]');
 
@@ -36,11 +36,11 @@ $(function () {
 
   // Pulling up the cart modal
   var modal = document.getElementById('cart_modal');
-  var cart_button = document.getElementById('go_to_cart')
+  var cart_button = document.getElementById('go_to_cart');
   var span = document.getElementsByClassName('close')[0];
-  var cart_HTML = ""
-  var single_cost = 0
-  var total_cost = 0
+  var cart_HTML = "";
+  var single_cost = 0;
+  var total_cost = 0;
 
   cart_button.onclick = function() {
     modal.style.display = 'block';
@@ -62,9 +62,9 @@ $(function () {
       // Displaying cart total in the modal
       total_cost = total_tacos * 3;
       cart_HTML +="<li><span class=modal_order>Total</span><span=modal_cost>";
-      cart_HTML +=total_cost.toFixed(2) + "</span>"
+      cart_HTML +=total_cost.toFixed(2) + "</span>";
       $(".modal_content").append(cart_HTML);
-      $(".modal_content").append("<button type='submit' id='checkout' class='button'>Checkout</button>")
+      $(".modal_content").append("<button type='submit' id='checkout' class='button'>Checkout</button>");
 
       $('#checkout').click(function() {
         alert("Checkout feature is under construction");
@@ -72,11 +72,11 @@ $(function () {
     } else {
       $(".modal_content").append("<p>Your cart is empty!! Order some tacos!! <p>");
     }
-  }
+  };
 
   span.onclick = function () {
     modal.style.display = "none";
     $(".modal_content").empty();
-  }
+  };
 
 });
