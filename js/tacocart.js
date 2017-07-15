@@ -78,7 +78,7 @@ $(function () {
     $(".modal_content").empty();
   }
 
-  $('.checkout').click(function() {
+  $('#checkout').click(function() {
     alert("Checkout feature is under construction");
   });
 
