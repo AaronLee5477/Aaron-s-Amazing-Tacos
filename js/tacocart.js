@@ -66,7 +66,7 @@ $(function () {
       cart_HTML +="<li><span class=modal_order>Total</span><span=modal_cost>";
       cart_HTML +=total_cost.toFixed(2) + "</span>"
       $(".modal_content").append(cart_HTML);
-
+      $(".modal_content").append("<button type='submit' id='checkout' class='button'>Checkout</button>")
 
     } else {
       $(".modal_content").append("<p>Your cart is empty!! Order some tacos!! <p>");
@@ -78,10 +78,9 @@ $(function () {
     $(".modal_content").empty();
   }
 
-  // window.onclick = function(event) {
-  //   if (event.target == modal) {
-  //     modal.style.display = "none";
-  //   }
-  // }
+  $('.checkout').click(function() {
+    alert("Checkout feature is under construction");
+  });
+
 
 });
