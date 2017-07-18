@@ -61,7 +61,7 @@ $(function () {
 
       // Displaying cart total in the modal
       total_cost = total_tacos * 3;
-      cart_HTML +="<li><span class=modal_order>Total</span><span=modal_cost>";
+      cart_HTML +="<li><span class=modal_order>Total</span><span class=modal_cost>";
       cart_HTML +=total_cost.toFixed(2) + "</span>";
       $(".modal_content").append(cart_HTML);
       $(".modal_content").append("<button type='submit' id='checkout' class='button'>Checkout</button>");

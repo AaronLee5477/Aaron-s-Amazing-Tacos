@@ -11,108 +11,108 @@
   </head>
 
   <body>
-
+    <div class="wrap">
     <!---Header -->
 
-    <header class="main-header">
-      <img src="images/cartoontaco.jpeg" class="header-image">
-      <h1 class="title">Aaron's Amazing Tacos</h1>
-      <ul class="main-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="order.html">Order</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </header>
+      <header class="main-header">
+        <img src="images/cartoontaco.jpeg" class="header-image">
+        <h1 class="title">Aaron's Amazing Tacos</h1>
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
 
-    <div class="container">
+      <div class="container">
 
 
-          <h2>All of out amazing tacos are only $3!!!</h2>
+            <h2>All of out amazing tacos are only $3!!!</h2>
 
-      <!---Taco Type -->
+        <!---Taco Type -->
 
-          <fieldset>
-            <legend>Step One: Choose the type of your taco!!</legend>
-            <table id='taco_table'>
-              <tbody>
-              <tr class='taco_row'>
-                <th scope="row">American</th>
-                <td class='toppings'>queso fresco, lettuce, pico de gallo, sour cream</td>
-              </tr>
-              <tr class='taco_row'>
-                <th scope="row">Atomic</th>
-                <td class='toppings'>queso fresco, jalapenos, habanero salsa</td>
-              </tr>
-              <tr class='taco_row'>
-                <th scope="row">California</th>
-                <td class='toppings'>coleslaw, chipolte aioli, queso fresco</td>
-              </tr>
-              <tr class='taco_row'>
-                <th scope="row">Southwestern</th>
-                <td class='toppings'>queso fresco, roasted corn, guacamole, salsa verde</td>
-              </tr>
-            </tbody>
-          </table>
-          <select id="taco_type" name="taco_type">
-              <option value "">Select your taco type</option>
-              <option value="American">American</option>
-              <option value="Atomic">Atomic</option>
-              <option value="California">California</option>
-              <option value="Southwestern">Southwestern</option>
-          </select>
-          </fieldset>
-
-          <!---Protein -->
-
-          <fieldset>
-            <legend>Step Two: Choose your protein!!</legend>
-            <select id="protein" name="protein">
-              <option value "">Select your taco protein</option>
-              <optgroup label="For carnivores">
-                <option value="shredded chicken">Shredded Chicken</option>
-                <option value="ground beef">Ground Beef</option>
-                <option value="pulled pork">Pulled Pork</option>
-                <option value="barbacoa">Barbacoa</option>
-                <option value="fish">Fish</option>
-              </optgroup>
-              <optgroup label="For herbivores">
-                <option value="black beans">Black Beans</option>
-                <option value="tofu">Marinated Tofu</option>
-                <option value="seitan">Jerked Seitan</option>
-              </optgroup>
+            <fieldset>
+              <legend>Step One: Choose the type of your taco!!</legend>
+              <table id='taco_table'>
+                <tbody>
+                <tr class='taco_row'>
+                  <th scope="row">American</th>
+                  <td class='toppings'>queso fresco, lettuce, pico de gallo, sour cream</td>
+                </tr>
+                <tr class='taco_row'>
+                  <th scope="row">Atomic</th>
+                  <td class='toppings'>queso fresco, jalapenos, habanero salsa</td>
+                </tr>
+                <tr class='taco_row'>
+                  <th scope="row">California</th>
+                  <td class='toppings'>coleslaw, chipolte aioli, queso fresco</td>
+                </tr>
+                <tr class='taco_row'>
+                  <th scope="row">Southwestern</th>
+                  <td class='toppings'>queso fresco, roasted corn, guacamole, salsa verde</td>
+                </tr>
+              </tbody>
+            </table>
+            <select id="taco_type" name="taco_type">
+                <option value "">Select your taco type</option>
+                <option value="American">American</option>
+                <option value="Atomic">Atomic</option>
+                <option value="California">California</option>
+                <option value="Southwestern">Southwestern</option>
             </select>
-          </fieldset>
+            </fieldset>
 
-          <!--- Tortilla --->
+            <!---Protein -->
 
-          <fieldset>
-            <legend>Step Three: Choose your tortilla!!</legend>
-            <select id="tortilla" name="tortilla">
-              <option value "">Select your taco tortilla</option>
-                <option value="flour">Flour</option>
-                <option value="corn">Corn</option>
-                <option value="wheat">Wheat</option>
-            </select>
-          </fieldset>
+            <fieldset>
+              <legend>Step Two: Choose your protein!!</legend>
+              <select id="protein" name="protein">
+                <option value "">Select your taco protein</option>
+                <optgroup label="For carnivores">
+                  <option value="shredded chicken">Shredded Chicken</option>
+                  <option value="ground beef">Ground Beef</option>
+                  <option value="pulled pork">Pulled Pork</option>
+                  <option value="barbacoa">Barbacoa</option>
+                  <option value="fish">Fish</option>
+                </optgroup>
+                <optgroup label="For herbivores">
+                  <option value="black beans">Black Beans</option>
+                  <option value="tofu">Marinated Tofu</option>
+                  <option value="seitan">Jerked Seitan</option>
+                </optgroup>
+              </select>
+            </fieldset>
 
-          <!-- Quantity --->
+            <!--- Tortilla --->
 
-          <fieldset>
-            <legend>Step Four: How many of these tacos would you like?</legend>
-            <input type="number" id="single_order_quantity" name='single_order_quantity' min='1' value="1">
-          </fieldset>
+            <fieldset>
+              <legend>Step Three: Choose your tortilla!!</legend>
+              <select id="tortilla" name="tortilla">
+                <option value "">Select your taco tortilla</option>
+                  <option value="flour">Flour</option>
+                  <option value="corn">Corn</option>
+                  <option value="wheat">Wheat</option>
+              </select>
+            </fieldset>
 
-        <button type="submit" id="add_to_cart" class="button">Add taco(s)</button>
-        <button type="submit" id="go_to_cart" class="button">Go to cart</button>
-      </div>
+            <!-- Quantity --->
 
-      <!--- Cart Modal--->
-      <div id="cart_modal" class="modal">
-        <span class="close">&times;</span>
-        <div class="modal_content">
+            <fieldset>
+              <legend>Step Four: How many of these tacos would you like?</legend>
+              <input type="number" id="single_order_quantity" name='single_order_quantity' min='1' value="1">
+            </fieldset>
+
+          <button type="submit" id="add_to_cart" class="button">Add taco(s)</button>
+          <button type="submit" id="go_to_cart" class="button">Go to cart</button>
+        </div>
+
+        <!--- Cart Modal--->
+        <div id="cart_modal" class="modal">
+          <span class="close">&times;</span>
+          <div class="modal_content">
+          </div>
         </div>
       </div>
-
       <!-- Footer -->
 
     <footer>

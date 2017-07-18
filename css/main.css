@@ -94,8 +94,8 @@ img {
 
 .modal {
   display: none;
-  height: 250px;
-  width: 500px;
+  height: auto;
+  width: 90%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -132,6 +132,7 @@ img {
 .modal_content h3 {
   font-size: 1.5em;
   font-weight: bold;
+  padding-left: 15px
 }
 
 .modal_content li {
@@ -143,10 +144,16 @@ img {
 
 .modal_cost {
   margin-left: auto;
+  padding-right: 10px;
 }
 
 .modal_order {
   margin-right: auto;
+  padding-left: 15px
+}
+
+.modal_content button {
+  margin-left: 15px;
 }
 
 
@@ -175,7 +182,7 @@ footer {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 /* Media Queries */
@@ -209,6 +216,13 @@ footer {
     justify-content: center;
   }
 
+  .wrap {
+    min-height: calc(100vh - 82px);
+  }
+
+  .modal {
+    width: 65%;
+  }
 }
 
 @media (min-width: 960px) {
@@ -232,5 +246,9 @@ footer {
 
   .sponsor {
     margin-left: 50px;
+  }
+
+  .modal {
+    width: 50%;
   }
 }
